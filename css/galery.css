@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("tatu3.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background: black;
 }
 header{
     width: 100%;
@@ -20,7 +16,7 @@ header{
     "item1 item2 item3 item4 item5";
 }
 .FirstItem{
-grid-area: item1;
+    grid-area: item1;
     justify-self: center;
     align-self: center;
 }
@@ -28,6 +24,7 @@ grid-area: item1;
     grid-area: item2;
     justify-self: center;
     align-self: center;
+    font-weight: bolder;
 }
 .ThirdItem{
     grid-area: item3;
@@ -45,8 +42,8 @@ grid-area: item1;
     align-self: center;
 }
 a{
-   text-decoration:none;
-   color: white;
+    text-decoration:none;
+    color: white;
     font-size: 36px;
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;

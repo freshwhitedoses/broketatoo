@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 116px;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(5,calc(100%/5));
+    grid-template-areas:
+    "item1 item2 item3 item4 item5";
+}
+.FirstItem{
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+}
+.SecondtItem{
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+}
+.ThirdItem{
+    grid-area: item3;
+    justify-self: center;
+    align-self: center;
+}
+.FourthItem{
+    grid-area: item4;
+    justify-self: center;
+    align-self: center;
+    font-weight: bolder;
+}
+.FifthItem{
+    grid-area: item5;
+    justify-self: center;
+    align-self: center;
+}
+a{
+    text-decoration:none;
+    color: white;
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns:repeat(3,calc(100%/3));
+    gap: 20px;
+    grid-template-areas: "item1 item2 item3";
+}
+.card1{
+    margin-top: 120px;
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+    height: 580px;
+    width: 440px;
+    cursor: pointer;
+
+}
+.card2{
+    margin-top: 120px;
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+    height: 580px;
+    width: 440px;
+    cursor: pointer;
+}
+.card3{
+    margin-top: 120px;
+    grid-area: item3;
+    justify-self: center;
+    align-self: center;
+    margin-right: 30px;
+    height: 580px;
+    width: 440px;
+    cursor: pointer;
+}
+.card1:hover .front1, .card2:hover .front2, .card3:hover .front3{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card1:hover .back1,.card2:hover .back2, .card3:hover .back3{
+    transform: perspective(600px) rotateY(0);
+}
+.front1, .back1,.front2, .back2, .front3, .back3{
+    height: 580px;
+    width: 440px;
+    overflow: hidden;
+    position: absolute;
+    transition: transform .9s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background:black;
+}
+.front1, .front2, .front3{
+    transform: perspective(600px) rotateY(0);
+
+}
+.back1, .back2, .back3{
+    transform: perspective(600px) rotateY(180deg);
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+}
+.back1 p,.back2 p, .back3 p{
+    color: white;
+}
+.front1 .photo, .front2 .photo, .front3 .photo{
+    height: 30px;
+
+}
+.front1 .name, .front2 .name, .front3 .name{
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card1 .about, .card2 .about, .card3 .about{
+    margin-top: 400px;
+    width: 433px;
+    height: 52px;
+    font-size: 39px;
+    background-color: rgba(54, 47, 47, 0.6);
+    color: white;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+
+
+
+
+
+/*
+.photo{
+    height: 30px;
+}
+.card1 .name, .card2 .name, .card3 .name{
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card1 .about, .card2 .about, .card3 .about{
+    margin-top: 400px;
+    width: 433px;
+    height: 52px;
+    font-size: 39px;
+    background-color: rgba(54, 47, 47, 0.6);
+    color: white;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+main{
+    display: grid;
+    grid-template-columns:repeat(3,calc(100%/3));
+    gap: 20px;
+    grid-template-areas: "item1 item2 item3";
+ }
+ .card1{
+     margin-top: 120px;
+    grid-area: item1;
+     justify-self: center;
+     align-self: center;
+}
+ .back1{
+     margin-top: 120px;
+     grid-area: item1;
+     justify-self: center;
+     align-self: center;
+     height: 541px;
+     width: 433px;
+     background-color: rgba(54, 47, 47,0.7);
+     opacity: 0;
+
+ }
+ .back1 p{
+     margin-top: 52px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: lighter;
+     font-size: 25px;
+     color: white;
+     max-width: 100%;
+ }
+.about:checked{
+    color: red;
+}
+
+ .card1:hover{
+     opacity: 0;
+ }
+.card2{
+    margin-top: 120px;
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+}
+.card3{
+    margin-top: 120px;
+    grid-area: item3;
+    justify-self: center;
+    align-self: center;
+    margin-right: 30px;
+}
+.back{
+    background-color: #FFFFFF;
+}
+
+ */
