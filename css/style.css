@@ -8,7 +8,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 header{
     width: 100%;
@@ -62,7 +62,7 @@ h1{
     width: 580px;
     height: 100px;
     background: #282222;
-    margin-top:710px;
+    margin-top:40%;
     margin-left: 100px;
     color: white;
     font-size: 48px;
