@@ -57,9 +57,10 @@ h1{
     font-weight: normal;
 }
 .swiper{
-    margin-top: 250px;
+    margin-top: 10%;
     width: 80%;
     height: 433px;
+    display: flex;
 }
 .swiper-slide{
     text-align: center;
@@ -69,16 +70,16 @@ h1{
     align-items: center;
 }
 .swiper-slide img{
-    width: 100%;
-    height: 433px;
+    width: 85%;
+    height: auto;
     object-fit: cover;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    right: 140px !important;
+    right: 8% !important;
     left: auto;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: 140px !important;
+    left: 8% !important;
     right: auto;
 }
 .swiper-button-next:after,.swiper-button-prev:after{

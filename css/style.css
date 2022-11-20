@@ -5,6 +5,7 @@
 }
 body {
     background-image: url("../images/tatu3.jpg");
+    background-color: black;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;

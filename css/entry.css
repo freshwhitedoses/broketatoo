@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+header{
+    width: 100%;
+    height: 116px;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(5,calc(100%/5));
+    grid-template-areas:
+    "item1 item2 item3 item4 item5";
+    z-index: 10;
+}
+.FirstItem{
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+    font-weight: bolder;
+}
+.SecondtItem{
+    grid-area: item2;
+    justify-self: center;
+    align-self: center;
+}
+.ThirdItem{
+    grid-area: item3;
+    justify-self: center;
+    align-self: center;
+}
+.FourthItem{
+    grid-area: item4;
+    justify-self: center;
+    align-self: center;
+}
+.FifthItem{
+    grid-area: item5;
+    justify-self: center;
+    align-self: center;
+}
+a{
+    text-decoration:none;
+    color: white;
+    font-size:40px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+.content{
+    width: 100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "type1 type2";
+    gap: 20%;
+}
+.rightItem{
+    grid-area: type1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.leftItem{
+    margin-top: 40%;
+    grid-area: type2;
+    justify-content: center;
+    align-items: center;
+    width: 569px;
+    height: 278px;
+    background: rgba(151, 146, 146, 0.5);
+    border-radius: 52px;
+}
+.info_number,.info_email,.info_address{
+    margin-top: 5%;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+.about{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+.line{
+    margin-top: 3%;
+    width: 492px;
+    height: 7px;
+    background: #FFFFFF;
+    margin-left: 30px;
+}
+
+.form{
+    width: 569px;
+    height: 496px;
+    background: rgba(145, 145, 145, 0.5);
+    border-radius: 52px;
+}
+.name{
+    width: 481px;
+    height: 108px;
+    background: #C4C4C4;
+    border-radius: 54px;
+    border: none;
+    margin-top: 13%;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 43px;
+}
+.number{
+    width: 481px;
+    height: 108px;
+    background: #C4C4C4;
+    border-radius: 54px;
+    border: none;
+    margin-top: 43px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 43px;
+}
+.check{
+    width: 332px;
+    height: 74px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    background: #C4C4C4;
+    border-radius: 11px;
+    border: none;
+    text-align: center;
+    margin-left: 119px;
+    margin-top: 10%;
+}
+
+

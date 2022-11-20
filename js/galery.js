@@ -7,5 +7,18 @@ new Swiper(".mySwiper", {
 
     mousewheel: true,
     keyboard: true,
-    slidesPerView:3,
+    breakpoints:{
+        768:{
+            slidesPerView:'auto',
+            spaceBetween: 8
+        },
+        991:{
+            slidesPerView: 2,
+            spaceBetween:30
+        },
+        1192:{
+            slidesPerView:3,
+            spaceBetween:20
+        }
+    }
 });
