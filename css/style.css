@@ -183,7 +183,7 @@ h1{
         margin-left: 100px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .button {
         bottom: 260px;
         width: 250px;
