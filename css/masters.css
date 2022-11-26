@@ -65,6 +65,7 @@ h1{
 
 main{
     display: grid;
+    height: 100%;
     margin-top: 30px;
     grid-template-columns:repeat(3,calc(100%/3));
     gap: 20px;
@@ -194,6 +195,8 @@ main{
 
     main {
         margin-top: -20%;
+        height: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows:repeat(2, 1fr);
@@ -321,8 +324,10 @@ main{
 
 @media screen and (max-width: 400px) {
     main {
+        height: 100%;
+        width: 100%;
         display: grid;
-        grid-template-rows:repeat(3, calc(350px/3));
+        grid-template-rows:repeat(3,1fr);
         gap: 20px;
         grid-template-areas: "it1"
                             "it2"

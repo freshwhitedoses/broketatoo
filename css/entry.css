@@ -8,10 +8,10 @@ body {
 }
 header{
     width: 100%;
-    height: 116px;
+    height: 100%;
     background: black;
     display: grid;
-    grid-template-columns: repeat(5,calc(100%/5));
+    grid-template-columns: repeat(5,1fr);
     grid-template-areas:
     "item1 item2 item3 item4 item5";
     z-index: 10;
@@ -55,6 +55,108 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
+.header_list{
+    display: none;
+}
+@media (min-width: 300px) and (max-width: 1000px) {
+    .header_list.active{
+        transform:translateX(0);
+    }
+    .header_list li{
+        list-style:none;
+        margin-bottom: 3%;
+    }
+
+    .header_burger.active span{
+        display: none;
+
+    }
+    .header_burger.active:before{
+        top:50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+
+    }
+    .header_burger.active:after{
+        top:50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+
+    }
+    header {
+        width: 100%;
+        background: black;
+        display: grid;
+        gap: 50%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+    "block1 block2";
+        z-index: 10;
+    }
+    .ThirdItem {
+        font-size: 40px;
+        grid-area: block1;
+        justify-self: start;
+    }
+    .FirstItem, .SecondtItem, .FourthItem, .FifthItem {
+        opacity: 0;
+    }
+    .header_burger {
+        grid-area: block2;
+        justify-self: start;
+        align-self: center;
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        z-index: 7;
+        margin-left: 50px;
+    }
+    .header_list li{
+        list-style:none;
+        margin-bottom: 3%;
+    }
+    .header_burger span {
+
+        background-color: white;
+        width: 90%;
+        height: 4px;
+        top: 15px;
+        transition: all 0.5s;
+    }
+
+    .header_burger:before {
+        top: 2px;
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 90%;
+        height: 4px;
+
+    }
+
+    .header_burger:after {
+        bottom: -2px;
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 90%;
+        height: 4px;
+    }
+
+    .header_list {
+        margin-top: 13%;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        z-index: 80;
+    }
+}
+/*
 .content{
     width: 100%;
     height:100%;
@@ -150,5 +252,7 @@ h1{
     margin-left: 119px;
     margin-top: 10%;
 }
+
+ */
 
 
