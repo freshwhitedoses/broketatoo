@@ -218,11 +218,12 @@ main{
     .image{
         display: flex;
         align-items: center;
-        justify-items: center;
-        margin-left: 0;
+        justify-content: center;
+
     }
     .image img{
        max-width: 100%;
+        justify-content: center;
     }
 }
 /*
@@ -367,7 +368,7 @@ main{
  */
 @media screen and (max-width: 450px) {
     .text p{
-        font-size: 25px;
+        font-size: 27px;
     }
     .image{
         max-width: 100%;
