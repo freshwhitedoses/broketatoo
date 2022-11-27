@@ -88,7 +88,6 @@ h1{
     width: 100%;
     height:100%;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
     grid-template-areas: "type1 type2";
     gap: 20%;
 }
@@ -250,29 +249,26 @@ h1{
         z-index: 80;
     }
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width:1350px) {
     .content{
         width: 100%;
         height:100%;
-        display:grid;
+        align-items: center;
+        display:flex;
         justify-content: center;
-
-        grid-template-areas: "t1"
-                              "t2";
-        gap: 10px;
+        align-content: center;
+        flex-direction: column;
     }
     .rightItem{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        grid-area: t1;
         justify-items: center;
         align-items: center;
         margin-left: 1%;
     }
     .leftItem{
-        margin-top: 1%;
-        grid-area: t2;
+        margin-top: 30px;
         justify-content: center;
         align-items: center;
         width: 569px;
@@ -312,6 +308,8 @@ h1{
         height: 496px;
         background: rgba(145, 145, 145, 0.5);
         border-radius: 52px;
+        justify-items: center;
+        align-items: center;
     }
     .name{
         width: 481px;
