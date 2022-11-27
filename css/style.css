@@ -89,11 +89,11 @@ h1{
     border: none;
 }
 a{
+    text-decoration:none;
     color: white;
-    font-size: 48px;
+    font-size:40px;
+    font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-align: center;
 }
 
 .header_burder{
@@ -132,6 +132,7 @@ a{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+
     }
 
     .FirstItem, .SecondtItem, .FourthItem, .FifthItem {
@@ -139,7 +140,10 @@ a{
     }
 
     .ThirdItem {
-
+        color: white;
+        font-size: 55px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
     }
 
     .header_burger {
@@ -208,14 +212,21 @@ a{
         bottom:20%;
         margin-left: 100px;
     }
-    a{
+    .enter{
         font-size: 35px;
+        font-weight: bold;
     }
     .header_list {
         margin-top:14%;
     }
 }
 @media screen and (max-width: 450px) {
+    .ThirdItem {
+        color: white;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+    }
     .button {
         bottom: 100px;
         width: 250px;
@@ -223,8 +234,10 @@ a{
         font-size: 27px;
         margin-left: 10px;
     }
-    a{
+    .enter{
         font-size: 27px;
+
+        font-weight: bold;
     }
     .header_list {
         margin-top:25%;

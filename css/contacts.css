@@ -269,8 +269,7 @@ main{
         margin-top: 10px;
         align-self: center;
         font-family: 'Montserrat',sans-serif;
-        font-style: normal;
-        font-weight: 400;
+        font-weight: lighter;
         font-size: 30px;
         text-align: center;
         color: #FFFFFF;
@@ -307,6 +306,14 @@ main{
         font-weight: 400;
         font-size: 25px;
         text-align: center;
+    }
+    .massage{
+        bottom: 1%;
+        position: relative;
+        background-color: black;
+        border-color: white;
+        border-style: solid;
+        border-radius: 50%;
     }
 }
 
@@ -354,7 +361,7 @@ main{
     align-self: center;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 20px;
     text-align: center;
     color: #FFFFFF;

@@ -158,6 +158,14 @@ main{
     font-family: 'Montserrat', sans-serif;
     border: none;
 }
+
+.header_burder{
+    display: none;
+}
+.header_list{
+    display: none;
+}
+
 .header_list.active{
     transform:translateX(0);
 }
@@ -181,90 +189,21 @@ main{
 
 }
 
-
 @media screen and (max-width: 1000px) {
-    a{
-        font-size: 55px;
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-    h1 {
-        color: white;
-        font-size: 64px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-    }
-
-    main {
-        margin-top: -20%;
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns:repeat(2, 1fr);
-        grid-template-rows:repeat(2, 1fr);
-        gap: 40px;
-        grid-template-areas: "it1 it2"
-                            "it3 it3";
-    }
-
-    .card1 {
-        margin-left: 40%;
-        margin-top: 160px;
-        grid-area: it1;
-        justify-self: center;
-        align-self: center;
-        height: 580px;
-        width: 440px;
-        cursor: pointer;
-
-    }
-
-    .card2 {
-        margin-left: 40%;
-        margin-top: 160px;
-        grid-area: it2;
-        justify-self: center;
-        align-self: center;
-        height: 580px;
-        width: 440px;
-        cursor: pointer;
-    }
-
-    .card3 {
-        margin-left: 28%;
-        margin-top: 1%;
-        grid-area: it3;
-        justify-self: center;
-        align-self: center;
-        height: 580px;
-        width: 440px;
-        cursor: pointer;
-    }
-
-    header {
-        margin-top: 3%;
-        width: 100%;
-        height: 116px;
-        background: black;
-        display: grid;
-        gap: 50%;
-        grid-template-columns: repeat(2, calc(100% / 2));
-        grid-template-areas:
-    "block1 block2";
-        z-index: 10;
-    }
-
     .FirstItem, .SecondtItem, .FourthItem, .FifthItem {
-        opacity: 0;
+        display: none;
     }
+    .ThirdItem{
 
-    .ThirdItem {
-        margin-left: 45%;
-        grid-area: block1;
-        justify-self: start;
-        align-self: center;
     }
-
     .header_burger {
-        grid-area: block2;
+
         justify-self: start;
         align-self: center;
         display: block;
@@ -278,6 +217,7 @@ main{
         list-style:none;
         margin-bottom: 3%;
     }
+
     .header_burger span {
 
         position: absolute;
@@ -320,18 +260,19 @@ main{
         transition: transform 0.5s;
         z-index: 80;
     }
-}
-
-@media screen and (max-width: 400px) {
+    .header_list {
+        margin-top:14%;
+    }
     main {
+        margin-top: 2%;
         height: 100%;
         width: 100%;
         display: grid;
-        grid-template-rows:repeat(3,1fr);
-        gap: 20px;
-        grid-template-areas: "it1"
-                            "it2"
-                             "it3";
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        gap: 40px;
+        grid-template-areas: "it1 it2"
+                            "it3 it3";
     }
 
     .card1 {
@@ -356,7 +297,59 @@ main{
     }
 
     .card3 {
-        margin-top: 5%;
+        margin-top: 1%;
+        grid-area: it3;
+        justify-self: center;
+        align-self: center;
+        height: 580px;
+        width: 440px;
+        cursor: pointer;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .header_list {
+        margin-top:25%;
+    }
+    .header_list li {
+        list-style: none;
+        margin-top: 8%;
+    }
+    main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows:repeat(3,1fr);
+        gap: 20px;
+        grid-template-areas: "it1"
+                            "it2"
+                             "it3";
+    }
+
+    .card1 {
+        margin-top: 50px;
+        grid-area: it1;
+        justify-self: center;
+        align-self: center;
+        height: 580px;
+        width: 300px;
+        cursor: pointer;
+
+    }
+
+    .card2 {
+        grid-area: it2;
+        justify-self: center;
+        align-self: center;
+        height: 580px;
+        width: 440px;
+        cursor: pointer;
+    }
+
+    .card3 {
         grid-area: it3;
         justify-self: center;
         align-self: center;
