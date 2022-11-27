@@ -343,7 +343,7 @@ main{
     }
 
     .card2 {
-        margin-top: 160px;
+        margin-top: 0;
         grid-area: it2;
         justify-self: center;
         align-self: center;
