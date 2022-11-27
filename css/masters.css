@@ -95,7 +95,7 @@ main{
     grid-area: item3;
     justify-self: center;
     align-self: center;
-    margin-right: 30px;
+
     height: 580px;
     width: 440px;
     cursor: pointer;
@@ -188,6 +188,8 @@ main{
     transform: translate(-50%,-50%) rotate(-45deg);
 
 }
+
+
 
 @media screen and (max-width: 1000px) {
     header{
@@ -322,7 +324,7 @@ main{
         height: 100%;
         width: 100%;
         display: grid;
-        grid-template-rows:repeat(3,1fr);
+        grid-template-columns:repeat(3,1fr);
         gap: 20px;
         grid-template-areas: "it1"
                             "it2"
@@ -335,17 +337,18 @@ main{
         justify-self: center;
         align-self: center;
         height: 580px;
-        width: 300px;
+        max-width: 440px;
         cursor: pointer;
 
     }
 
     .card2 {
+        margin-top: 160px;
         grid-area: it2;
         justify-self: center;
         align-self: center;
         height: 580px;
-        width: 440px;
+        max-width: 440px;
         cursor: pointer;
     }
 
@@ -354,7 +357,7 @@ main{
         justify-self: center;
         align-self: center;
         height: 580px;
-        width: 440px;
+        max-width: 440px;
         cursor: pointer;
     }
 
